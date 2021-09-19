@@ -1,5 +1,8 @@
 package se.nackademin.java20.pgw.presentation;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@CrossOrigin
 public class PaymentDto {
     private String reference;
     private long amount;
