@@ -42,7 +42,7 @@ public class RabbitNotificationService implements PaymentNotificationService {
 
         RestTemplate restTemplate = new RestTemplate();
 
-        String url = "https://hakimlivsdb.herokuapp.com/payment/add/reference/status";
+        String url = "https://payment-gatewaay.herokuapp.com/payment/add";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
