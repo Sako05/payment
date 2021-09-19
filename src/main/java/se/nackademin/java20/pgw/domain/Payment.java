@@ -2,10 +2,12 @@ package se.nackademin.java20.pgw.domain;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
 import java.time.Instant;
 
+@CrossOrigin
 @Entity
 public class Payment {
 

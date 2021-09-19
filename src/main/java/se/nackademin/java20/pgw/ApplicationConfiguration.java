@@ -9,6 +9,7 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import se.nackademin.java20.pgw.application.PaymentService;
 import se.nackademin.java20.pgw.domain.PaymentNotificationService;
 import se.nackademin.java20.pgw.domain.PaymentRepository;
@@ -19,6 +20,7 @@ import javax.persistence.EntityManager;
 
 @Configuration
 @EnableScheduling
+@CrossOrigin
 public class ApplicationConfiguration {
 
     @Bean

@@ -11,6 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.client.RestTemplate;
 import se.nackademin.java20.pgw.domain.Payment;
 import se.nackademin.java20.pgw.domain.PaymentNotificationService;
@@ -18,6 +19,7 @@ import se.nackademin.java20.pgw.domain.PaymentNotificationService;
 import java.util.HashMap;
 import java.util.Map;
 
+@CrossOrigin
 public class RabbitNotificationService implements PaymentNotificationService {
     private final static Logger LOG = LoggerFactory.getLogger(RabbitNotificationService.class);
 

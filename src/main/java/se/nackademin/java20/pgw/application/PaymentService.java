@@ -2,6 +2,7 @@ package se.nackademin.java20.pgw.application;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import se.nackademin.java20.pgw.domain.Payment;
 import se.nackademin.java20.pgw.domain.PaymentNotificationService;
 import se.nackademin.java20.pgw.domain.PaymentRepository;
@@ -12,6 +13,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin
 public class PaymentService {
     private final static Logger LOG = LoggerFactory.getLogger(PaymentService.class);
 

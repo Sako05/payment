@@ -2,7 +2,9 @@ package se.nackademin.java20.pgw.persistance;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin
 public class PaymentMessageDto {
     @JsonProperty("reference")
     private final String reference;

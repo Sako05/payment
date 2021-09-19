@@ -1,5 +1,6 @@
 package se.nackademin.java20.pgw.persistance;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import se.nackademin.java20.pgw.domain.Payment;
 import se.nackademin.java20.pgw.domain.PaymentRepository;
 
@@ -8,6 +9,7 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 public class PaymentRepositoryHibernate implements PaymentRepository {
     private final EntityManager em;
 
